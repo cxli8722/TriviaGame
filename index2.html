@@ -1,0 +1,77 @@
+<!-- Students: Our work lies in the js file. -->
+
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+  <title>quiz</title>
+
+   
+
+  
+     <!-- relation to this is rel  and link to style.css  -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+         <!-- google font  -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="assets/javascript/app.js"></script>
+
+
+
+
+
+
+  </head>
+
+  <body>
+
+
+      <h1> My quiz!</h1>
+    <form id="quiz" name="quiz">
+
+    <p> Who possesses the ring of power at the start of the trilogy?</p>
+    <input id="textbox" type="text" name="question1" >
+
+    <p>Who leads Frodo and Sam to Buckleberry Ferry?</p>
+    <input type="radio" id="mc" name="question2" value="Maggot"> Maggot<br>
+    <input type="radio" id="mc" name="question2" value="Gandalf"> Gandalf<br>
+    <input type="radio" id="mc" name="question2" value="Merry"> Merry<br>
+   
+
+    <p>Who is the first member of the fellowship to be separated from the group??</p>
+    <input type="radio" id="mc" name="question3" value="Gandalf"> Gandalf<br>
+    <input type="radio" id="mc" name="question3" value=" Boromir"> Boromir<br>
+    <input type="radio" id="mc" name="question3" value=" Legolas"> Legolas<br>
+    <input type="radio" id="mc" name="question3" value="Aragorn"> Aragorn<br>
+   
+   
+   
+      <!-- Our CSS style sheet -->
+    <input id="button" type="button" value="Submit!" onclick="check();" >
+    </form>
+
+
+    <div id="after_submit">
+    <p id= "message"> </p>
+    <p id="number_correct"> you finishined good job!</p>
+    <img id="pictures"> 
+    
+    </div>
+    
+
+
+
+
+
+
+  </body>
+
+
+
+
+</html>
+
