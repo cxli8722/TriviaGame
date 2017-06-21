@@ -9,7 +9,7 @@ var question1 = document.quiz.question1.value;
 var question2 = document.quiz.question2.value; 
 var question3 = document.quiz.question3.value;
 var correct=0;
-  if (question1 == "bibo") 
+  if (question1 == "bilbo") 
   {
     correct++; // same as  correct=correct+1
   }
@@ -51,9 +51,10 @@ document.getElementById("number_correct").innerHTML = "The total number correct 
 
 }
 
-var myVar = setInterval(function() {
-  myTimer()
-}, 1000);
+
+var myVar = setInterval(
+  myTimer
+, 1000);
 var seconds = 0;
 
 function myTimer() {
@@ -61,7 +62,7 @@ function myTimer() {
   if( seconds === 60){
     check();
     seconds=0;
-    //document.getElementById('after_submit').style.visibility="hidden";
+
 
 
 
@@ -70,3 +71,13 @@ function myTimer() {
   }
 }
 
+function reset(){
+  $('#textbox').val('');
+  $("input:radio").attr("checked", false);
+  $("#after_submit").css("visibility", "hidden");
+  seconds=0;
+
+  
+
+
+}
