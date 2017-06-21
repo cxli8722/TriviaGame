@@ -50,3 +50,23 @@ document.getElementById("number_correct").innerHTML = "The total number correct 
 
 
 }
+
+var myVar = setInterval(function() {
+  myTimer()
+}, 1000);
+var seconds = 0;
+
+function myTimer() {
+  document.getElementById("timer").innerHTML = seconds++;
+  if( seconds === 60){
+    check();
+    seconds=0;
+    //document.getElementById('after_submit').style.visibility="hidden";
+
+
+
+
+
+  }
+}
+
